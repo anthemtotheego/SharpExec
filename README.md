@@ -17,8 +17,7 @@ http://blog.redxorblue.com/2018/10/sharpcradle-loading-remote-c-binaries.html
 
 **Before submitting issues, this tool may not always be updated actively. I encourage you to borrow, add, mod, and/or make your own.  Remember, all the awesome code out there (and there is a lot) can be taken/modified to create your own custom tools.**
 
-![Alt text](/SCradle.PNG?raw=true "SharpCradle")
-![Alt text](/SCradle_2.PNG?raw=true "")
+![Alt text](/sharpexec.PNG?raw=true "SharpExec")
 
 Setup - Quick and Dirty
 ==============================
