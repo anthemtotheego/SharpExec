@@ -5,8 +5,10 @@ Description
 
 SharpExec is a tool written in C# and was designed to be another option for penetration testers or red teams to perform lateral movement within a MS Windows environment. It currently includes:
 
-PSExec module - that allows you to execute a remote binary with arguments, for example, cmd.exe as NT Authority/System
-WMI module - 
+PSExec module - Allows you to execute a remote binary with arguments, for example, cmd.exe as NT Authority/System.
+WMI module - Allows you to execute a remote binary with aruguments, for example, cmd.exe as user.
+File upload capability - Allows you to upload a custom file
+
 
 Contact at:
 - Twitter: @anthemtotheego
