@@ -1,7 +1,0 @@
-C:\Users\sjones\Desktop\RSM\C# Projects\SharpExec\SharpExec\bin\x64\Debug\SharpExec.exe.config
-C:\Users\sjones\Desktop\RSM\C# Projects\SharpExec\SharpExec\bin\x64\Debug\SharpExec.exe
-C:\Users\sjones\Desktop\RSM\C# Projects\SharpExec\SharpExec\bin\x64\Debug\SharpExec.pdb
-C:\Users\sjones\Desktop\RSM\C# Projects\SharpExec\SharpExec\obj\x64\Debug\SharpExec.csproj.CoreCompileInputs.cache
-C:\Users\sjones\Desktop\RSM\C# Projects\SharpExec\SharpExec\obj\x64\Debug\SharpExec.exe
-C:\Users\sjones\Desktop\RSM\C# Projects\SharpExec\SharpExec\obj\x64\Debug\SharpExec.pdb
-C:\Users\sjones\Desktop\RSM\C# Projects\SharpExec\SharpExec\obj\x64\Debug\SharpExec.csprojAssemblyReference.cache
