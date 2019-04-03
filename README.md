@@ -3,7 +3,9 @@
 Description
 ============
 
-SharpExec is an offensive security C# tool designed to aid with lateral movement. It currently includes:
+SharpExec is an offensive security C# tool designed to aid with lateral movement. 
+
+It currently includes:
 
 -PSExec (like functionality) - Gives the operator the ability to execute remote commands as NT Authority\System or upload a file and execute it with or without arguments as NT Authority\System.
 
