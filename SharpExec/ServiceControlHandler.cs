@@ -4,6 +4,7 @@ using System.Security.Permissions;
 
 namespace SharpExec
 {
+    //Reference https://stackoverflow.com/questions/23481394/programmatically-install-windows-service-on-remote-machine
     [SecurityPermission(SecurityAction.InheritanceDemand, UnmanagedCode = true)]
     [SecurityPermission(SecurityAction.Demand, UnmanagedCode = true)]
     public class ServiceControlHandle : SafeHandleZeroOrMinusOneIsInvalid

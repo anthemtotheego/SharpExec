@@ -8,6 +8,8 @@ using System.Security.Principal;
 
 namespace SharpExec
 {
+    //Reference https://stackoverflow.com/questions/22544903/impersonate-for-entire-application-lifecycle
+
     [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
     public class Impersonation : IDisposable
     {

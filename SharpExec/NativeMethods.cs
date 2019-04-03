@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace SharpExec
 {
+    //Reference - https://stackoverflow.com/questions/23481394/programmatically-install-windows-service-on-remote-machine
     public static class NativeMethods
     {
         [DllImport("advapi32.dll")]

@@ -64,7 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileAddRemove.cs" />
+    <Compile Include="Help.cs" />
     <Compile Include="Impersonator.cs" />
+    <Compile Include="ManageProcess.cs" />
+    <Compile Include="ManageService.cs" />
     <Compile Include="NativeMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
