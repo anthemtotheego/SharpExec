@@ -192,9 +192,10 @@ namespace SharpExec
                     {
                         Console.WriteLine("Commands             Description");
                         Console.WriteLine("--------             -----------");
-                        Console.WriteLine("put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt File.txt");
-                        Console.WriteLine("get                  Download file from current shell directory to local directory, get File.txt fullLocalPath\\File.txt");
-                        Console.WriteLine("help                 Set execution path, -e=C:\\Windows\\System32\\cmd.exe");
+                        Console.WriteLine("put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt fullLocalPath\\File.txt");
+                        Console.WriteLine("get                  Download file from current shell directory to local directory, get fullLocalPath\\File.txt fullLocalPath\\File.txt");
+                        Console.WriteLine("help                 Show help menu");
+                        Console.WriteLine("exit                 Exit shell");
                         Console.WriteLine();
                         Console.Write(@"C:\WINDOWS\system32>");
                     }
@@ -329,9 +330,10 @@ namespace SharpExec
                     {
                         Console.WriteLine("Commands             Description");
                         Console.WriteLine("--------             -----------");
-                        Console.WriteLine("put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt File.txt");
-                        Console.WriteLine("get                  Download file from current shell directory to local directory, get File.txt fullLocalPath\\File.txt");
-                        Console.WriteLine("help                 Set execution path, -e=C:\\Windows\\System32\\cmd.exe");
+                        Console.WriteLine("put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt fullLocalPath\\File.txt");
+                        Console.WriteLine("get                  Download file from current shell directory to local directory, get fullLocalPath\\File.txt fullLocalPath\\File.txt");
+                        Console.WriteLine("help                 Show help menu");
+                        Console.WriteLine("exit                 Exit shell");
                         Console.WriteLine();
                         Console.Write(@"C:\WINDOWS\system32>");
                     }
