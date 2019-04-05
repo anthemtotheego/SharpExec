@@ -89,10 +89,10 @@ Starts semi-interactive shell on remote system as NT Authority\System
 
 ```SharpExec.exe -m=smbexec -i=192.168.1.10 -u=TargetUser -p=P@ssword! -d=TargetDomain```
 
-While shell is running
+While semi-interactive shell is running
 
-```put                  Upload file from local directory to current shell directory, put fullLocalPath\File.txt fullLocalPath\File.txt```
-```get                  Download file from current shell directory to local directory, get fullLocalPath\File.txt fullLocalPath\File.txt```
-```help                 Show help menu```
-```exit                 exit shell```
+```put               ``````Upload file from local directory to current shell directory, put fullLocalPath\File.txt fullLocalPath\File.txt```
+```get               ``````Download file from current shell directory to local directory, get fullLocalPath\File.txt fullLocalPath\File.txt```
+```help              ``````Show help menu```
+```exit              ``````exit shell```
 
