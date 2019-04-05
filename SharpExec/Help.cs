@@ -17,7 +17,7 @@ namespace SharpExec
             Console.WriteLine("-----                --------    -----------");
             Console.WriteLine("-m                   True        Set Module [psexec,wmi,wmiexec,smbexec], -m=psexec");
             Console.WriteLine("-i                   True        Set rhost, -i=192.168.0.10");
-            Console.WriteLine("-e                   True        Set execution path, -e=C:\\Windows\\System32\\cmd.exe");
+            Console.WriteLine("-e                   False       Set execution path, -e=C:\\Windows\\System32\\cmd.exe");
             Console.WriteLine("-d                   False       Set domain, -d=MyDomain");
             Console.WriteLine("-u                   False       Set username, -u=TargetUser");
             Console.WriteLine("-p                   False       Set password, -p=MyP@ssw0rd!");
