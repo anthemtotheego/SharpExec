@@ -100,4 +100,7 @@ help                 Show help menu
 exit                 exit shell
 </pre>
 
+Acknowledgements
+============
 
+SecureAuthCorp - Impacket tools - https://github.com/SecureAuthCorp/impacket
