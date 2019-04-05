@@ -103,4 +103,6 @@ exit                 exit shell
 Acknowledgements
 ============
 
+I tried to mimic Impacket's wmiexec.py and smbexec.py as much as possible.  This is an awesome project and if you haven't ever used their tools, I highly suggest checking them out!
+
 SecureAuthCorp - Impacket tools - https://github.com/SecureAuthCorp/impacket
