@@ -80,9 +80,10 @@ While shell is running
 
 <pre>:
 put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt File.txt
-```get                  Download file from current shell directory to local directory, get File.txt fullLocalPath\\File.txt```
-```help                 Show help menu```
-```exit                 exit shell```
+get                  Download file from current shell directory to local directory, get File.txt fullLocalPath\\File.txt
+help                 Show help menu
+exit                 exit shell
+</pre>
 
 SMBExec Module:
 
