@@ -94,8 +94,8 @@ Starts semi-interactive shell on remote system as NT Authority\System
 While semi-interactive shell is running
 
 <pre>
-put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt File.txt
-get                  Download file from current shell directory to local directory, get File.txt fullLocalPath\\File.txt
+put                  Upload file from local directory to current shell directory, put fullPath\\File.txt fullPath\\File.txt
+get                  Download file from current shell directory to local directory, get fullPath\\File.txt fullPath\\File.txt
 help                 Show help menu
 exit                 exit shell
 </pre>
