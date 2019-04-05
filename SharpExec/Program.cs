@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/*
+Author: @anthemtotheego
+License: BSD 3-Clause    
+*/
+
 namespace SharpExec
 {
     class Program
