@@ -78,7 +78,7 @@ Starts semi-interactive shell on remote system as TargetUser
 
 While shell is running
 
-<pre>:
+<pre>
 put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt File.txt
 get                  Download file from current shell directory to local directory, get File.txt fullLocalPath\\File.txt
 help                 Show help menu
@@ -93,8 +93,11 @@ Starts semi-interactive shell on remote system as NT Authority\System
 
 While semi-interactive shell is running
 
-```put  Upload file from local directory to current shell directory, put fullLocalPath\File.txt fullLocalPath\File.txt```
-```get  Download file from current shell directory to local directory, get fullLocalPath\File.txt fullLocalPath\File.txt```
-```help Show help menu```
-```exit Exit shell```
+<pre>
+put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt File.txt
+get                  Download file from current shell directory to local directory, get File.txt fullLocalPath\\File.txt
+help                 Show help menu
+exit                 exit shell
+</pre>
+
 
