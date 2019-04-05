@@ -7,13 +7,13 @@ SharpExec is an offensive security C# tool designed to aid with lateral movement
 
 It currently includes:
 
--PSExec (like functionality) - Gives the operator the ability to execute remote commands as NT Authority\System or upload a file and execute it with or without arguments as NT Authority\System.
-
--WMI - Gives the operator the ability to execute remote commands as the user or upload a file and execute it with or without arguments as the user.
-
 -WMIExec - Semi-Interactive shell that runs as the user. Best described as a less mature version of Impacket's wmiexec.py tool.
 
 -SMBExec - Semi-Interactive shell that runs as NT Authority\System.  Best described as a less mature version of Impacket's smbexec.py tool.
+
+-PSExec (like functionality) - Gives the operator the ability to execute remote commands as NT Authority\System or upload a file and execute it with or without arguments as NT Authority\System.
+
+-WMI - Gives the operator the ability to execute remote commands as the user or upload a file and execute it with or without arguments as the user.
 
 In the Future I would like to add:
 
@@ -25,7 +25,7 @@ Contact at:
 
 Quick blog:
 
-http://blog.redxorblue.com/2018/10/sharpcradle-loading-remote-c-binaries.html
+https://blog.redxorblue.com/2018/10/sharpcradle-loading-remote-c-binaries.html
 
 **Before submitting issues, this tool may not always be updated actively. I encourage you to borrow, add, mod, and/or make your own.  Remember, all the awesome code out there (and there is a lot) can be taken/modified to create your own custom tools.**
 
@@ -48,7 +48,7 @@ Examples
 ========
 
 Note - All modules require Administrative rights on the target systems
-Note - If you the user who runs SharpExec has administrative rights to the target system, username/password/domain options on not required.
+Note - If the user who runs SharpExec has administrative rights to the target system, username/password/domain options on not required.
 
 PSExec Module:
 
@@ -78,7 +78,8 @@ Starts semi-interactive shell on remote system as TargetUser
 
 While shell is running
 
-```put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt File.txt```
+<pre>:
+put                  Upload file from local directory to current shell directory, put fullLocalPath\\File.txt File.txt
 ```get                  Download file from current shell directory to local directory, get File.txt fullLocalPath\\File.txt```
 ```help                 Show help menu```
 ```exit                 exit shell```
