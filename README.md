@@ -25,7 +25,7 @@ Contact at:
 
 Quick blog:
 
-https://blog.redxorblue.com/2018/10/sharpcradle-loading-remote-c-binaries.html
+https://blog.redxorblue.com/2019/04/sharpexec-lateral-movement-with-your.html
 
 **Before submitting issues, this tool may not always be updated actively. I encourage you to borrow, add, mod, and/or make your own.  Remember, all the awesome code out there (and there is a lot) can be taken/modified to create your own custom tools.**
 
@@ -38,11 +38,11 @@ Setup - Quick and Dirty
 
 1. Download SharpExec tool and open up SharpExec.sln  
 
-2. Open up SharpExec.sln in Visual Studio and compile (make sure to compile for correct architecture) - Should see drop down with Any CPU > Click on it and open Configuration Manager > under platform change to desired architecture and select ok.
+2. Open up SharpExec.sln in Visual Studio (make sure to compile for correct architecture) - Should see drop down with Any CPU > Click on it and open Configuration Manager > under platform change to desired architecture and select ok.
 
 3. Inside visual studio, right click References on the righthand side, choose Add Reference, then under Assemblies, search for System.Management, check the box and click OK.
 
-4. Compile, again make sure for the correct architecture (x64 or x86), drop binary on computer or pull into memory and have fun.
+4. Compile, make sure for the correct architecture (x64 or x86), drop binary on computer or pull into memory and have fun.
 
 Examples 
 ========
