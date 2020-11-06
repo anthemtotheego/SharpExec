@@ -34,7 +34,7 @@ https://blog.redxorblue.com/2019/04/sharpexec-lateral-movement-with-your.html
 Setup - Quick and Dirty
 ==============================
 
-**Note: For those of you who don't want to go through the trouble of compiling your own I uploaded an x64 and x86 binary found in the CompiledBinaries folder.  For those of you who do want to compile your own... I used Windows 10, Visual Studio 2017 - mileage may vary**
+**Note: I used Windows 10, Visual Studio 2017 - mileage may vary**
 
 1. Download SharpExec tool and open up SharpExec.sln  
 
