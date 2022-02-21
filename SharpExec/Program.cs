@@ -52,7 +52,7 @@ namespace SharpExec
                     Console.WriteLine("[-] Missing required argument -m");
                     Console.WriteLine();
                     Console.WriteLine("[-] SharpExec did not run");
-                    Environment.Exit(0);
+                    return;
                 }
                 if (arguments.ContainsKey("-i"))
                 {
@@ -63,7 +63,7 @@ namespace SharpExec
                     Console.WriteLine("[-] Missing required argument -i");
                     Console.WriteLine();
                     Console.WriteLine("[-] SharpExec did not run");
-                    Environment.Exit(0);
+                    return;
                 }
                 if (arguments.ContainsKey("-e"))
                 {
